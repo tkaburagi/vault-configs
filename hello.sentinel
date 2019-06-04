@@ -1,0 +1,7 @@
+import "<library>"
+
+<variable> = <value>
+
+main = rule {
+     <conditions_to_evaluate>
+}
