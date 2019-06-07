@@ -18,3 +18,5 @@ listener "tcp" {
 ui = true
 
 disable_mlock = true
+
+api_addr = API_ADDR
