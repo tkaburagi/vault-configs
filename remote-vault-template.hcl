@@ -1,7 +1,7 @@
 storage "consul" {
   address = "127.0.0.1:8500"
   path    = "vault/"
-  service = SERVICE_NAME
+  service = SERVICE_NAME_REPLACE
 }
 
 
@@ -19,4 +19,4 @@ ui = true
 
 disable_mlock = true
 
-api_addr = API_ADDR
+api_addr = API_ADDR_REPLACE
