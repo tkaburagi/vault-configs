@@ -1,7 +1,7 @@
 storage "consul" {
   address = "127.0.0.1:8500"
   path    = "vault/"
-  service = SERVICE_NAME_REPLACE
+  service = "SERVICE_NAME_REPLACE"
 }
 
 
@@ -17,6 +17,6 @@ listener "tcp" {
 
 ui = true
 
-api_addr = API_ADDR_REPLACE
+api_addr = "API_ADDR_REPLACE"
 
-cluster_addr = CLUSTER_ADDR_REPLACE
+cluster_addr = "CLUSTER_ADDR_REPLACE"
