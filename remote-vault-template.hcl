@@ -19,3 +19,4 @@ ui = true
 
 api_addr = API_ADDR_REPLACE
 
+cluster_addr = API_ADDR_REPLACE
