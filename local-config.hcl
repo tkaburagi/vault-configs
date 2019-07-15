@@ -1,5 +1,5 @@
 storage "file" {
-   path = "/Users/kabu/hashicorp/vault/localdata"
+   path = "/tmp/vaultdata"
 }
 
 listener "tcp" {
