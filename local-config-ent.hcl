@@ -4,9 +4,6 @@ storage "file" {
 
 seal "awskms" {
   region     = "ap-northeast-1"
-  access_key = "$AWS_ACCESS_KEY_ID"
-  secret_key = "$AWS_SECRET_ACCESS_KEY"
-  kms_key_id = "$VAULT_AWSKMS_SEAL_KEY_ID"
   endpoint   = "https://kms.ap-northeast-1.amazonaws.com"
 }
 
