@@ -3,6 +3,10 @@ seal "awskms" {
   endpoint   = "https://kms.ap-northeast-1.amazonaws.com"
 }
 
+storage "file" {
+  path = "/home/ubuntu/vault-data"
+}
+
 listener "tcp" {
   address     = "0.0.0.0:8200"
   tls_disable = 1
