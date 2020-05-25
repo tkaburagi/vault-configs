@@ -11,7 +11,8 @@ storage "raft" {
 listener "tcp" {
   address     = "0.0.0.0:8200"
   cluster_address = "0.0.0.0:8201"
-  tls_disable = 1
+  tls_cert_file = TLS_CERT_FILE_REPLACE
+  tls_key_file = TLS_KEY_FILE_REPLACE
 }
 
 ui = true
