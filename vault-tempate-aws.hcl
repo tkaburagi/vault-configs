@@ -22,7 +22,7 @@ storage "raft" {
    leader_api_addr = "https://10.10.0.52:8200"
    leader_ca_cert_file = "/home/ubuntu/vaultca-hashidemos.crt.pem"
    leader_client_cert_file = "/home/ubuntu/vaultvault-hashidemos.crt.pem"
-   leader_client_key_file = "/home/ubuntu/vaultvault-localhashidemoshost.key.pem"
+   leader_client_key_file = "/home/ubuntu/vaultvault-hashidemos.key.pem"
   }
 }
 
