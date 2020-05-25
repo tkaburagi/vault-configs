@@ -11,8 +11,8 @@ storage "raft" {
 listener "tcp" {
   address     = "0.0.0.0:8200"
   cluster_address = "0.0.0.0:8201"
-  tls_cert_file = /home/ubuntu/vaultvault-hashidemos.crt.pem
-  tls_key_file = /home/ubuntu/vaultvault-hashidemos.key.pem
+  tls_cert_file = "/home/ubuntu/vaultvault-hashidemos.crt.pem"
+  tls_key_file = "/home/ubuntu/vaultvault-hashidemos.key.pem"
 }
 
 ui = true
