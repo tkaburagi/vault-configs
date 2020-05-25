@@ -3,8 +3,9 @@ seal "awskms" {
   endpoint   = "https://kms.ap-northeast-1.amazonaws.com"
 }
 
-storage "file" {
-  path = "/home/ubuntu/vault-data"
+storage "raft" {
+  path = "/home/ubuntu/vault-raft-data"
+  node_id = "NODE_ID_REPLACE"
 }
 
 listener "tcp" {
@@ -17,4 +18,4 @@ ui = true
 
 api_addr = "API_ADDR_REPLACE"
 
-cluster_addr = "https://CLUSTER_ADDR_REPLACE:8201"
+cluster_addr = "http://CLUSTER_ADDR_REPLACE:8201"
