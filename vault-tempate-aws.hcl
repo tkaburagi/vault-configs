@@ -8,21 +8,21 @@ storage "raft" {
   node_id = "NODE_ID_REPLACE"
   retry_join {
    leader_api_addr = "https://10.10.0.50:8200"
-   leader_ca_cert_file = "/home/ubuntu/vaultca-localhost.crt.pem"
-   leader_client_cert_file = "/Users/kabu/hashicorp/vaultvault-localhost.crt.pem"
-   leader_client_key_file = "/Users/kabu/hashicorp/vaultvault-localhost.key.pem"
+   leader_ca_cert_file = "/home/ubuntu/vaultca-hashidemos.crt.pem"
+   leader_client_cert_file = "/Users/kabu/hashicorp/vaultvault-hashidemos.crt.pem"
+   leader_client_key_file = "/Users/kabu/hashicorp/vaultvault-hashidemos.key.pem"
   }
   retry_join {
    leader_api_addr = "https://10.10.0.51:8200"
-   leader_ca_cert_file = "/home/ubuntu/vaultca-localhost.crt.pem"
-   leader_client_cert_file = "/home/ubuntu/vaultvault-localhost.crt.pem"
-   leader_client_key_file = "/home/ubuntu/vaultvault-localhost.key.pem"
+   leader_ca_cert_file = "/home/ubuntu/vaultca-hashidemos.crt.pem"
+   leader_client_cert_file = "/home/ubuntu/vaultvault-hashidemos.crt.pem"
+   leader_client_key_file = "/home/ubuntu/vaultvault-hashidemos.key.pem"
   }
   retry_join {
    leader_api_addr = "https://10.10.0.52:8200"
-   leader_ca_cert_file = "/home/ubuntu/vaultca-localhost.crt.pem"
-   leader_client_cert_file = "/home/ubuntu/vaultvault-localhost.crt.pem"
-   leader_client_key_file = "//home/ubuntu/vaultvault-localhost.key.pem"
+   leader_ca_cert_file = "/home/ubuntu/vaultca-hashidemos.crt.pem"
+   leader_client_cert_file = "/home/ubuntu/vaultvault-hashidemos.crt.pem"
+   leader_client_key_file = "//home/ubuntu/vaultvault-localhashidemoshost.key.pem"
   }
 }
 
