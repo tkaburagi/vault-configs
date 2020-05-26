@@ -8,17 +8,17 @@ storage "raft" {
   node_id = "NODE_ID_REPLACE"
   retry_join {
    leader_api_addr = "https://CLUSTER_ADDR_REPLACE:8200"
-   leader_ca_cert_file = "/home/ubuntu/vaultca-hashidemos.crt.pem"
-   leader_client_cert_file = "/home/ubuntu/vaultvault-hashidemos.crt.pem"
-   leader_client_key_file = "/home/ubuntu/vaultvault-hashidemos.key.pem"
+   leader_ca_cert_file = "/home/ubuntu/dr-vaultca-hashidemos.crt.pem"
+   leader_client_cert_file = "/home/ubuntu/dr-vaultvault-hashidemos.crt.pem"
+   leader_client_key_file = "/home/ubuntu/dr-vaultvault-hashidemos.key.pem"
   }
 }
 
 listener "tcp" {
   address     = "0.0.0.0:8200"
   cluster_address = "0.0.0.0:8201"
-  tls_cert_file = "/home/ubuntu/vaultvault-hashidemos.crt.pem"
-  tls_key_file = "/home/ubuntu/vaultvault-hashidemos.key.pem"
+  tls_cert_file = "/home/ubuntu/dr-vaultvault-hashidemos.crt.pem"
+  tls_key_file = "/home/ubuntu/dr-vaultvault-hashidemos.key.pem"
 }
 
 ui = true
